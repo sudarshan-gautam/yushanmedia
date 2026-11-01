@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=$(if [ -d "/home/$USER/public_html/yushanmedia.com.np" ]; then echo "/home/$USER/public_html/yushanmedia.com.np/"; elif [ -d "/home/$USER/yushanmedia.com.np" ]; then echo "/home/$USER/yushanmedia.com.np/"; else echo "/home/$USER/public_html/yushanmedia.com.np/"; fi)
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R * $DEPLOYPATH
