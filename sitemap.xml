@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://yushanmedia.com.np/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yushanmedia.com.np/logo.png</image:loc>
+      <image:title>Yushan Media Logo</image:title>
+      <image:caption>Official logo of Yushan Media Pvt. Ltd</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://yushanmedia.com.np/newsroom.jpg</image:loc>
+      <image:title>Kathmandu Newsroom</image:title>
+      <image:caption>Yushan Media Kathmandu Newsroom</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://yushanmedia.com.np/chairman.jpg</image:loc>
+      <image:title>Sudarshan Gautam - Chairman</image:title>
+      <image:caption>Sudarshan Gautam, Chairman of Yushan Media Pvt. Ltd</image:caption>
+    </image:image>
+  </url>
+</urlset>
