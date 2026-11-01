@@ -53,5 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+  // 4. Smooth scroll to top when clicking brand logo & strip hash
+  const brandLinks = document.querySelectorAll('.brand-link');
+  brandLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (window.location.hash) {
+        history.pushState(null, '', window.location.pathname);
+      }
+    });
+  });
 });
 
