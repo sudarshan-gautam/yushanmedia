@@ -2,11 +2,17 @@
 # Yushan Media Pvt. Ltd — Security & Performance Configuration
 # ----------------------------------------------------------------------
 
-# 1. Force HTTPS
+# 1. Force HTTPS and Non-WWW (Canonical: https://yushanmedia.com.np)
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Redirect www to non-www
+  RewriteCond %{HTTP_HOST} ^www\.yushanmedia\.com\.np$ [NC]
+  RewriteRule ^(.*)$ https://yushanmedia.com.np/$1 [R=301,L]
+
+  # Redirect insecure HTTP to HTTPS
   RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteRule ^(.*)$ https://yushanmedia.com.np/$1 [R=301,L]
 </IfModule>
 
 # 2. Disable Directory Browsing
